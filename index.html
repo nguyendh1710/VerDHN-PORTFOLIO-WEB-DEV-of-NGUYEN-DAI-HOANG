@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NguyenDai_Portfolio</title>
+    <link rel="icon" href="img/DSC_0004_3.JPG" type="image/png">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      .nav-link.active {
+        border-color: red !important;
+        border-width: 3px !important;
+      }
+      .responsive-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav-link {
+        width: auto;
+        height: 40px;
+        margin: 10px;
+        padding: 5px 10px;
+        background-color: #27AE60;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Các nút không active chỉ hiện chấm tròn */
+    .nav-link:not(.active) {
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0;
+        border-radius: 50% !important;
+        background-color: #27ae2b;
+        color: transparent;
+        font-size: 0;
+        margin-top: 3vh !important;
+    }
+
+    /* Tooltip mặc định */
+    .nav-link::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 10;
+    }
+
+    /* Tooltip khi hover */
+    .nav-link[data-tooltip]::after {
+        opacity: 1;
+        animation: heartbeat 1.5s infinite;
+    }
+
+    /* Thêm hiệu ứng Heartbeat */
+    @keyframes heartbeat {
+        0% { transform: translateX(-50%) scale(1); }
+        14% { transform: translateX(-50%) scale(1.3); }
+        28% { transform: translateX(-50%) scale(1); }
+        42% { transform: translateX(-50%) scale(1.3); }
+        70% { transform: translateX(-50%) scale(1); }
+    }
+    </style>
+  </head>
+
+  <body class="main-content">
+    <header class="container home " id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div
+            class="image"
+            style="width: 500px; height: 500px; border-radius: 50%"
+          >
+            <img
+              src="img/DSC_0004_3.JPG"
+              alt=""
+              style="border-radius: 50%; width: 500px; height: 500px"
+            />
+          </div>
+        </div>
+        <div class="right-header">
+          <h1 class="name">
+            Hi, I'm <span>Nguyen Dai Hoang</span>
+            A Web Developer.
+          </h1>
+          <p>
+            I'm a Web Developer, I love creating visually appealing and
+            user-friendly web interfaces. I am also the type of person who
+            enjoys learning and renewing myself every day!
+          </p>
+          <div class="btn-con">
+            <a
+              href="https://drive.google.com/file/d/1FbHhKcR5jOhaChmAsuTY1BPEi1yfwDSE/view?usp=sharing"
+              class="main-btn"
+            >
+              <span class="btn-text">Download CV</span>
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container about" id="about">
+        <div class="main-title">
+          <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+        </div>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>Information</h4>
+            <br />
+            <br />
+
+            <ul style="line-height: 2.5">
+              <li>
+                <i class="fa-solid fa-cake-candles"></i>
+
+                <span>Birthday: 17/10/1994</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email: daihoangnguyen17101994@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i> <span>Phone: 0372313306</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Address: Q.6, TP.HCM</span>
+              </li>
+            </ul>
+
+            <div class="btn-con" style="padding-top: 1rem">
+              <a
+                href="https://drive.google.com/file/d/1FbHhKcR5jOhaChmAsuTY1BPEi1yfwDSE/view?usp=sharing"
+                class="main-btn"
+              >
+                <span class="btn-text">Download CV</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">12+</p>
+                <p class="small-text">
+                  Projects <br />
+                  Completed
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">1+</p>
+                <p class="small-text">
+                  Years of <br />
+                  experience
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">3+</p>
+                <p class="small-text">
+                  Relevants <br />
+                  experience
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">4+</p>
+                <p class="small-text">UX/UI & Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <h4 class="stat-title">My Skills</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">html5,css3</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="html"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Bootstrap, MUI, Ant Design</p>
+              <div class="progress-con">
+                <p class="prog-text">85%</p>
+                <div class="progress">
+                  <span class="css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Javascript ES6</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">ReactJS</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">UI Library Other</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Git-Github</p>
+              <div class="progress-con">
+                <p class="prog-text">87%</p>
+                <div class="progress">
+                  <span class="node"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">UI/UX (Figma)</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Office computer skills</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">SEO skills</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">English skills</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Responsive</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Editing skills (Photoshop, Canva)</p>
+              <div class="progress-con">
+                <p class="prog-text">60%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="stat-title">My Timeline</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">03/2024 - present</p>
+            <h5>Fresher FrontEnd Developer<span> - P.A.T Company</span></h5>
+
+            <p>FrontEnd Web Develope  & UI Design</p>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">03/2022 - 02/2024</p>
+            <h5> Intern FrontEnd Developer<span> - Cybersoft Company</span></h5>
+           
+            <p>Web designer and programmer</p>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">02/2021 - 01/2022</p>
+            <h5>Tester<span> - VNED Company.</span></h5>
+            <p>Testing software & web with testing methods: manual (API, SQL, performance, …) & automated (Selenium, …)</p>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">08/2017 - 01/2021</p>
+            <h5>UI/UX & Design Marketing<span> - Thien Minh Company</span></h5>
+            <p>Designing web interfaces using Figma and designing web interface components using some design tools (Photoshop, Canva, …)</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">06/2022 - 12/2023</p>
+            <h5>
+              Certificate’s Professional Frontend Developer<span>
+                - Cybersoft Academy</span
+              >
+            </h5>
+            <a
+            href="https://drive.google.com/file/d/1Ew9rWFJRZ7tpoaovXymSpytrKBUkqRYJ/view?usp=sharing"
+            class="main-btn"
+            style= "margin-top: 6px;margin-bottom: 16px;"
+          >
+            <span class="btn-text">Nhấn để xem chứng chỉ</span>
+          </a>
+            <p>
+              Web designer and programmer
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2012 - 2016</p>
+            <h5>
+              Bachelor’s degree in Mathematics and Informatics Degree<span>
+                -Trường ÐH.KHTN ÐHQG.HCM - ÐH Chính quy</span
+              >
+            </h5>
+            <p>
+              Graduated in Mathematics and Informatics with a focus on Applied
+              Computer Science
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container portfolio myactive" id="portfolio">
+        <div class="main-title">
+          <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+        </div>
+        <p class="port-text">Here is some of my project that I've done.</p>
+
+        <!-- ///////////////////////////// -->
+        <!-- content -->
+        <div class="project_content">
+          <!-- button  -->
+          <ul
+            class="nav nav-pills"
+            id="myTab"
+            role="tablist"
+            style="
+              display: flex;
+              gap: 20px;
+              margin-left: 300px;
+              border-radius: 20px;
+            "
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-developer-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-1"
+                href="#developer"
+                role="tab"
+                aria-controls="developer"
+                type="button"
+                role="tab"
+                aria-controls="pills-developer"
+                aria-selected="false"
+                style="
+                  width: auto;
+                  height: 40px;
+                  margin: 10px 10px 10px 10px;
+                  padding: 5px 5px 5px 5px;
+                  background-color: #27ae60;
+                  border-radius: 10px;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                Web Dev
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+              class="nav-link active"
+              id="pills-mobile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-1"
+              href="#mobile"
+              role="tab"
+              aria-controls="mobile"
+              type="button"
+              role="tab"
+              aria-controls="pills-mobile"
+              aria-selected="false"
+              style="
+                width: auto;
+                height: 40px;
+                margin: 10px 10px 10px 10px;
+                padding: 5px 5px 5px 5px;
+                background-color: #27ae60;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+              "
+            >
+              Mobile Dev
+            </button>
+             
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-uiux-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-2"
+                href="#uiux"
+                role="tab"
+                aria-controls="uiux"
+                type="button"
+                role="tab"
+                aria-controls="pills-uiux"
+                aria-selected="false"
+                style="
+                  width: auto;
+                  height: 40px;
+                  margin: 10px 10px 10px 10px;
+                  padding: 5px 5px 5px 5px;
+                  background-color: #27ae60;
+                  border-radius: 10px;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                UI/UX Designer
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-designer-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-2"
+                href="#designer"
+                role="tab"
+                aria-controls="designer"
+                type="button"
+                role="tab"
+                aria-controls="pills-designer"
+                aria-selected="false"
+                style="
+                  width: auto;
+                  height: 40px;
+                  margin: 10px 10px 10px 10px;
+                  padding: 5px 5px 5px 5px;
+                  background-color: #27ae60;
+                  border-radius: 10px;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                Designer
+              </button>
+            </li>
+          </ul>
+
+          <!-- // chuyển trang-->
+          <!-- ////////////////////////////////////// -->
+          <div class="tab-content" id="myTabContent">
+            <!-- portfolio lập trình web -->
+
+            <div
+              class="tab-pane fade"
+              id="developer"
+              role="tabpanel"
+              aria-labelledby="developer-tab"
+            >
+              <div class="portfolios">
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmiwatech-v2.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[NextJS & TS & Responsive] Miwa Tech Website</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MIWA-TECH-V2-NEXTJS-TYPESCRIPT-BOOTSTRAP/blob/main/Readme"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MIWA-TECH-V2-NEXTJS-TYPESCRIPT-BOOTSTRAP/blob/main/Readme"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a href="https://www.figma.com/design/WOvr9lMBVzdntnR9QzheWt/VerDHN-MIWA-TECH-WEBSITE--ver2-?node-id=47-4&t=WXcK63ZAjcxyMPEb-1" class="icon">
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-MIWATECH-COMPANY-WEBSITE-V2-NEXTJS-TYPESCRIPT-BOOTSTRAP"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://miwatech-website.vercel.app/"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://youtu.be/8erO5MT1VSM" class="icon">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgningendock.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[FullStackJS & Responsive] BerNard Ningen Dock Landing Page</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-BERNARD-NIGENDOCK-FULLSTACK/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-BERNARD-NIGENDOCK-FULLSTACK/blob/main/customer-%20requests"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a href="https://www.figma.com/design/wcvbOWJLmRLzGy3HuGZN4c/%5BLANDING-PAGE%5D-BerNard-NigenDock-UI-Design?node-id=47-4&t=MMAN0Dd1kD8jsINz-1" class="icon">
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-NINGEN-DOCK_BERNARD-FULLSTACKS"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://ver-dhn-ningen-dock-bernard-fullstacks-1do4.vercel.app/"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://youtu.be/B90mMGvXtVM" class="icon">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmiwatech.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[NextJS & TS & Responsive] Miwa Tech Website</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MIWA-TECH-NEXTJS-TYPESCRIPT-MUI/blob/main/Readme"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MIWA-TECH-NEXTJS-TYPESCRIPT-MUI/blob/main/Readme"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a href="https://www.figma.com/design/WOvr9lMBVzdntnR9QzheWt/VerDHN-MIWA-TECH-WEBSITE--ver2-?node-id=47-4&t=WXcK63ZAjcxyMPEb-1" class="icon">
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-MIWATECH-COMPANY-WEBSITE-NEXTJS-TYPESCRIPT-MUI"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="miwatech-company-website-project.vercel.app"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://youtu.be/oV8ymzDci3U" class="icon">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgminiwood.png" class="responsive-image" alt="" />
+                  </div>
+                  <div
+                    class="hover-items"
+                    style="display: flex; flex-direction: column"
+                  >
+                    <h3>[ReactJS] Miniwood</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column; padding-right: 5px; padding-left:5px;"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MINIWOOD-PROJECT-REACTJS/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MINIWOOD-PROJECT-REACTJS/blob/main/UI%20design%20-%20box"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://www.figma.com/design/T8llUmsKMrBcUiTjnBsWs2/%5BWeb%5D-MINIWOOD-(Version-2--of-K)?node-id=0-1&t=Wh3X7fu1bUKf0AzJ-1"
+                            class="icon"
+                          >
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-MINIWOOD-REACTJS"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://ver-dhn-miniwood-reactjs.vercel.app/"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://www.youtube.com/watch?v=pyOh8pPxYCE"
+                            class="icon"
+                          >
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgjira.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] Jira</h3>
+                    <div class="icons"    >
+                      <a
+                        href="https://github.com/nguyendh-xp97/Jira/blob/main/README.md"
+                        class="icon"
+                       
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/NgocHuy-Dev/BC52-CapstoneJira-Gr14?fbclid=IwAR1w5zmzLVRvYIuurYrq1rz5LQLOiO-jG_bd1atOo6gqe5obupCptrgbm-U"
+                        class="icon"
+                      
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+
+                      <a
+                        href="https://capstone-jira-beta.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="https://youtu.be/47z2FtCrojM" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmovie.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] Movie</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/Movie/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-PROJECT--MOVIE-REACT"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://project-movie-react.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="https://youtu.be/ouv7IqB2rG4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                 
+
+
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgroadtriprentcar.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS & TS & Responsive] Landing Page - Road Trip Rent Car</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-ROAD-TRIP-RENT-CAR-_-LANDING-PAGE---REACTJS-MUI-RESPONSIVE-TYPESCRIPT/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-ROAD-TRIP-RENT-CAR-_-LANDING-PAGE---REACTJS-MUI-RESPONSIVE-TYPESCRIPT/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a href="https://www.figma.com/design/rG29NTg5nptgx1m3f01Ucq/RoadTripRent---Rent-Car-Landing-Page--Community-?node-id=0-1&t=bk8XeNsfGmxvwMYG-1" class="icon">
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-ROAD-TRIP-RENT-CAR---REACTJS-TYPESCRIPT-MUI"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://ver-dhn-road-trip-rent-car-reactjs-typescript-mui.vercel.app/"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://youtu.be/gtF1IXRXATw" class="icon">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgfortunewheel.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] Fortune Wheel Game</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-FORTUNE-WHEEL-REACTJS/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-FORTUNE-WHEEL-REACTJS/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a href="https://www.figma.com/design/4xsPpLzQ36EsblhZp5mtCQ/TKG-Fortune-Wheel-(Copy)?node-id=14-209&t=KNZfGmpyDNyf93gN-1" class="icon">
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-top: 10px;
+                        "
+                      >
+                        <div>
+                          <a
+                            href="https://github.com/nguyendh1710/VerDHN-FORTUNE-WHEEL-GAME-REACTJS"
+                            class="icon"
+                          >
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://ver-dhn-fortune-wheel-game-reactjs.vercel.app/"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-globe"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://youtu.be/sKvv3wAzkTI" class="icon">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgqatest.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] QA Test Game</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-QATEST-REACTJS/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-IELTS1984-FRONTEND-_-i-Ho-ng-Nguy-n-"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://ielts-1984-frontend-i-ho-ng-nguy-n.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="https://youtu.be/5LJ6qmXFBqA" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgexchangerates.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] Exchange Rates</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Exchange-Rates/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/Nguyen-Dai-Hoang"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://nguyen-dai-hoang.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="https://youtu.be/7-n1WDEMLEg" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bguijetos.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[ReactJS] UI FIGMA JETOS</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN_FrontEnd_Testing_JETOS/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-DaiHoangNguyen-FrontEnd--Testing_JETOS-REACTJS"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://dai-hoang-nguyen-front-end-testing-jetos-reactjs.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmobilestore.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[JS ES6] Mobile Store</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/Mobile-Store/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/daihoangnguyen-BT-Capstone-JS"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://daihoangnguyen-bt-capstone-js-rho.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a
+                        href="https://youtu.be/nnZGaj9Qxdc?si=id4nk354tC7g2FZQ"
+                        class="icon"
+                      >
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgcorpvision.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Bootstrap] Corp Vision-Clone</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/Corp-Vision-Clone/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/NopBT1-BTNhom-Nhom13"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://nop-bt-1-bt-nhom-nhom13.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a
+                        href="https://youtu.be/DwELkKhcUYU?si=VBPUYg1iDQyU6AgM"
+                        class="icon"
+                      >
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/port3.jpg" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3> Porforlio</h3>
+                            <div class="icons">
+                                <a href="#" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="icon">
+                                    <i class="fa-solid fa-arrows-rotate"></i>
+                                </a>
+                                <a href="#" class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgnewmeipaly.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[UIPage] New Meipaly</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-New-Meipaly/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-PROJECT--NEW-MEIPALY"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://project-new-meipaly.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="#" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgsamar.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[UIPage] Sarma</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Sarma/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-PROJECT--SAMAR"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://project-samar-bay.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="#" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgcamping.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[UIPage] Camping</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Camping/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-PROJECT--CAMPING"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://project-camping.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="#" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmasterynew.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[UIPage] Mastery-New</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Mastery-New/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <a
+                        href="https://github.com/nguyendh1710/-PROJECT---MASTERY-NEW"
+                        class="icon"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://project-mastery-new.vercel.app/"
+                        class="icon"
+                      >
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                      <a href="#" class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- // portfolio lập trình di động -->
+
+             <div
+             class="tab-pane fade"
+             id="mobile"
+             role="tabpanel"
+             aria-labelledby="mobile-tab"
+           >
+             <div class="portfolios">
+               <div class="portfolio-item">
+                 <div class="image">
+                   <img src="img/bgcoffeeshop.png" class="responsive-image" alt="" />
+                 </div>
+                 <div class="hover-items">
+                   <h3>[FullStack ReactNative] Coffee Shop</h3>
+
+                   <div
+                     class="icons"
+                     style="display: flex; flex-direction: column"
+                   >
+                     <div style="display: flex; flex-direction: row">
+                       <div class="d">
+                         <a
+                           href="https://github.com/nguyendh-xp97/VerDHN-Mobile-App-Coffee-Shop-LetDiv-ReactNative/blob/main/README.md"
+                           class="icon"
+                         >
+                           <i class="fa-solid fa-circle-info"></i>
+                         </a>
+                       </div>
+                       <div class="d">
+                         <a
+                           href="https://github.com/nguyendh-xp97/VerDHN-Mobile-App-Coffee-Shop-LetDiv-ReactNative/blob/main/README.md"
+                           class="icon"
+                         >
+                           <i class="fa-solid fa-person-circle-question"></i>
+                         </a>
+                       </div>
+                       <div class="d">
+                         <a href="https://www.figma.com/design/Gyqf4xSmr5W2DbEqXqly0N/COFFEESHOP?node-id=0-1&t=eBEsRMJPrHHznE0E-1" class="icon">
+                           <i class="fab fa-figma"></i>
+                         </a>
+                       </div>
+                     </div>
+
+                     <div
+                       style="
+                         display: flex;
+                         flex-direction: row;
+                         margin-top: 10px;
+                       "
+                     >
+                       <div>
+                         <a
+                           href="https://github.com/nguyendh1710/VerDHN-COFFEE-SHOP-LETDIV-FINAL-REACTNATIVE"
+                           class="icon"
+                         >
+                           <i class="fab fa-github"></i>
+                         </a>
+                       </div>
+                       <div>
+                         <a
+                           href="#"
+                           class="icon"
+                         >
+                           <i class="fa-solid fa-globe"></i>
+                         </a>
+                       </div>
+                       <div>
+                         <a href="https://youtu.be/tSFQffXCTOM" class="icon">
+                           <i class="fab fa-youtube"></i>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             
+
+               <div class="portfolio-item">
+                 <div class="image">
+                   <img src="img/bgemployeemanagement.png" class="responsive-image" alt="" />
+                 </div>
+                 <div class="hover-items">
+                   <h3>[ReactNative] Mini Project Employee Management</h3>
+                   <div class="icons"    >
+                     <a
+                       href="https://github.com/nguyendh-xp97/VerDHN-Employee-Management_MiniProject2-LetDiv-ReactNative/blob/main/README.md"
+                       class="icon"
+                      
+                     >
+                       <i class="fa-solid fa-circle-info"></i>
+                     </a>
+                     <a
+                       href="https://github.com/nguyendh1710/VerDHN-REACTNATIVE-LetDiv-BTchuong4/tree/employee-management"
+                       class="icon"
+                     
+                     >
+                       <i class="fab fa-github"></i>
+                     </a>
+
+                     <a
+                       href="#/"
+                       class="icon"
+                     >
+                       <i class="fa-solid fa-globe"></i>
+                     </a>
+                     <a href="https://youtube.com/shorts/hOVOk90ha_s" class="icon">
+                       <i class="fab fa-youtube"></i>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+               <div class="portfolio-item">
+                <div class="image">
+                  <img src="img/bgecommerce.png" class="responsive-image" alt="" />
+                </div>
+                <div class="hover-items">
+                  <h3>[ReactNative] Mini Project E-commerce</h3>
+                  <div class="icons"    >
+                    <a
+                      href="https://github.com/nguyendh-xp97/VerDHN-E-commerce_MiniProject1-LetDiv-ReactNative/blob/main/Readme"
+                      class="icon"
+                     
+                    >
+                      <i class="fa-solid fa-circle-info"></i>
+                    </a>
+                    <a
+                      href="https://github.com/nguyendh1710/VerDHN-REACTNATIVE-LetDiv-BTchuong4"
+                      class="icon"
+                    
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="icon"
+                    >
+                      <i class="fa-solid fa-globe"></i>
+                    </a>
+                    <a href="https://youtube.com/shorts/vbu08p4vaKY?feature=share" class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+
+            <!-- //  portfolio UI/UX -->
+
+            <div
+              class="tab-pane fade"
+              id="uiux"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="portfolios">
+
+
+
+                <div class="portfolio-item">
+                                <div class="image">
+                                  <img src="img/bgagrotop-v2.png" class="responsive-image" alt="" />
+                                </div>
+                                <div class="hover-items">
+                                  <h3>[Website] AgroTop-V2 </h3>
+                                  <div class="icons">
+                                    <a
+                                      href="https://github.com/nguyendh-xp97/VerDHN-AGROTOP-V2/blob/main/README"
+                                      class="icon"
+                                      style="margin-left: 10px"
+                                    >
+                                      <i class="fa-solid fa-circle-info"></i>
+                                    </a>
+                                    <div class="d">
+                                      <a
+                                        href="https://www.figma.com/design/UFvHcs1yamqDoFUzeRd0Bj/AGROTOP-WEBSITE-V2?t=eK2MBT8AY9alpKTl-1"
+                                        class="icon"
+                                      >
+                                        <i class="fab fa-figma"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                             <div class="portfolio-item">
+                                <div class="image">
+                                  <img src="img/bgagrotop-v1.png" class="responsive-image" alt="" />
+                                </div>
+                                <div class="hover-items">
+                                  <h3>[Website] AgroTop-V1 </h3>
+                                  <div class="icons">
+                                    <a
+                                      href="https://github.com/nguyendh-xp97/VerDHN-ARGOTOP-V1/blob/main/README"
+                                      class="icon"
+                                      style="margin-left: 10px"
+                                    >
+                                      <i class="fa-solid fa-circle-info"></i>
+                                    </a>
+                                    <div class="d">
+                                      <a
+                                        href="https://www.figma.com/design/EGGm716EbGUMdPuHlnolbP/AGROTOP-WEBSITE-V1?t=KIu6MdwMMRP4OqJi-1"
+                                        class="icon"
+                                      >
+                                        <i class="fab fa-figma"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgningendock.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Landing Page] BerNard Ningen Dock </h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-BERNARD-NIGENDOCK-FULLSTACK/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/yklEXvVnJjWfvPGSuMPjT3/%5BApp%5D-CG-Bank-Mobile-App?node-id=72-57&t=eBEsRMJPrHHznE0E-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgmiwatech.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Website] Miwa Tech </h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-MIWA-TECH-NEXTJS-TYPESCRIPT-MUI/blob/main/Readme"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/WOvr9lMBVzdntnR9QzheWt/VerDHN-MIWA-TECH-WEBSITE--ver2-?node-id=47-4&t=WXcK63ZAjcxyMPEb-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bglapishome.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Website] Lapis Home </h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-LAPIS-HOME/blob/main/Readme"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/DOAN0PfJv1Tck4TDuayzoC/Lapis-home?node-id=0-1&t=pVapqMBU96QD2MTa-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgsunriseoil.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Website] Sunrise Oil </h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-SUNRISE-OIL/tree/main"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/REV2AksJE1anGpbaCf8Zvr/SUNRISE-OIL-UI-DESIGN?node-id=4-10&t=1cz1PTNHd2yucSja-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgwatertech.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[App] Water Tech </h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-WATER-TECH/blob/main/Readme"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/LXtAi0KpPYU5phXxUjJ1ND/water-tech?node-id=9-5618&t=t4xsEWAWGzegqzAY-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgcgbank.png"class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Mobile App] CG Bank</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Mobile-CGBank/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/yklEXvVnJjWfvPGSuMPjT3/%5BApp%5D-CG-Bank-Mobile-App?node-id=72-57&t=eBEsRMJPrHHznE0E-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgcoffeeshop.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Mobile App] Coffee Shop</h3>
+                    <div class="icons">
+                      <a
+                        href="https://github.com/nguyendh-xp97/VerDHN-Mobile-Coffee-Shop/blob/main/README.md"
+                        class="icon"
+                        style="margin-left: 10px"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>
+                      <div class="d">
+                        <a
+                          href="https://www.figma.com/design/Gyqf4xSmr5W2DbEqXqly0N/COFFEESHOP?node-id=0-1&t=eBEsRMJPrHHznE0E-1"
+                          class="icon"
+                        >
+                          <i class="fab fa-figma"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/bgminiwood.png" class="responsive-image" alt="" />
+                  </div>
+                  <div
+                    class="hover-items"
+                    style="display: flex; flex-direction: column"
+                  >
+                    <h3>[Web App] Miniwood</h3>
+
+                    <div
+                      class="icons"
+                      style="display: flex; flex-direction: column"
+                    >
+                      <div style="display: flex; flex-direction: row">
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MINIWOOD-PROJECT-REACTJS/blob/main/README.md"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://github.com/nguyendh-xp97/VerDHN-MINIWOOD-PROJECT-REACTJS/blob/main/UI%20design%20-%20box"
+                            class="icon"
+                          >
+                            <i class="fa-solid fa-person-circle-question"></i>
+                          </a>
+                        </div>
+                        <div class="d">
+                          <a
+                            href="https://www.figma.com/design/T8llUmsKMrBcUiTjnBsWs2/%5BWeb%5D-MINIWOOD-(Version-2--of-K)?node-id=0-1&t=Wh3X7fu1bUKf0AzJ-1"
+                            class="icon"
+                          >
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                      <img src="img/bgfortunewheel.png" class="responsive-image" alt="" />
+                    </div>
+                    <div class="hover-items">
+                      <h3>[Web App] Fortune Wheel Game</h3>
+                      <div class="icons">
+                        <a
+                          href="https://github.com/nguyendh-xp97/VerDHN-FORTUNE-WHEEL-REACTJS/blob/main/README.md"
+                          class="icon"
+                          style="margin-left: 10px"
+                        >
+                          <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                        <div class="d">
+                          <a
+                            href="https://www.figma.com/design/4xsPpLzQ36EsblhZp5mtCQ/TKG-Fortune-Wheel-(Copy)?node-id=14-209&t=KNZfGmpyDNyf93gN-1"
+                            class="icon"
+                          >
+                            <i class="fab fa-figma"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- //  portfolio Desiner -->
+
+            <div
+              class="tab-pane fade"
+              id="designer"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="portfolios">
+
+  
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/profile-miwatech.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Profile Company] MiwaTech Co. Ltd</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/223485691/Profile-Company-Miwa-Tech-Co-Ltd"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/namecard-senviet.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Name Card] Sen Viet</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/223485819/Name-Card-Sen-Viet"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/pacific-rim-poster-final.jpg" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Pacific Rim</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043367/Poster-Pacific-Rim-3"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/poster-beauty-edit.jpg" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Beauty</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043449/Poster-Beauty"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/poster-the-cofee-house.jpg" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Cofee House</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043669/Poster-The-Coffee-House"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/poster-iphone-15.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Iphone 15</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043557/Poster-Iphone-15"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/poster-aten.jpg" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Aten</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043417/Poster-ATEN"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <div class="image">
+                    <img src="img/poster-pacific-rim-1.png" class="responsive-image" alt="" />
+                  </div>
+                  <div class="hover-items">
+                    <h3>[Poster] Pacific Rim 1</h3>
+                    <div class="icons">
+                      <div class="d">
+                        <a
+                          href="https://www.behance.net/gallery/210043261/Poster-Pacific-Rim-3"
+                          class="icon"
+                        >
+                          <i class="fab fa-behance"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ///////////////////////////// -->
+      </section>
+      <!-- <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      <section class="container contact" id="contact">
+        <div class="contact-container">
+          <div class="main-title">
+            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+          </div>
+          <div class="contact-content-con" style="width: auto">
+            <div class="left-contact" style="width: auto">
+              <h4>Contact me here</h4>
+              <p>
+                If you have any questions, please contact me via the information
+                below.
+              </p>
+              <div class="contact-info" style="width: 500px">
+                <div class="contact-item">
+                  <div class="icon" style="margin-right: 90px">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address</span>
+                  </div>
+                  <p>: Q.6, TP.HCM</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                  </div>
+                  <p style="padding-left: 40px">
+                    <span>: daihoangnguyen17101994@gmail.com</span>
+                  </p>
+                </div>
+
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mobile Number</span>
+                  </div>
+                  <p>
+                    <span>: 0372 313 306</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a
+                    href="https://www.facebook.com/nguyen.daihoang.7"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="www.linkedin.com/in/nguyên-đại-hoàng-98767b302"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/nguyendh1710" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.behance.net/nguyendaihoang"
+                    target="_blank"
+                  >
+                    <i class="fab fa-behance"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="right-contact">
+              <form action="" class="contact-form">
+                <div class="input-control i-c-2">
+                  <input type="text" required placeholder="YOUR NAME" />
+                  <input type="email" required placeholder="YOUR EMAIL" />
+                </div>
+                <div class="input-control">
+                  <input type="text" required placeholder="ENTER SUBJECT" />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="15"
+                    rows="8"
+                    placeholder="Message Here..."
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <a
+                    href="https://drive.google.com/file/d/1FbHhKcR5jOhaChmAsuTY1BPEi1yfwDSE/view?usp=sharing"
+                    class="main-btn"
+                  >
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-download"></i
+                    ></span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="controls">
+      <div class="control myactive-btn" data-id="home">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="control" data-id="about">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="control" data-id="portfolio">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <!-- <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div> -->
+      <div class="control" data-id="contact">
+        <i class="fas fa-envelope-open"></i>
+      </div>
+    </div>
+    <div class="theme-btn">
+      <i class="fas fa-adjust"></i>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- app.js -->
+    <script src="app.js"></script>
+  </body>
+</html>
